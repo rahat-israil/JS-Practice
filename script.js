@@ -53,3 +53,17 @@ multiply(5)
  * string  ---> ' '
  * Array  ---> [] 
  */
+
+
+// Template string, multiple line string, dynamic string (` `)
+ 
+function numberSum(num1, num2){
+    const total = num1 + num2;
+    const result = `Sum of ${num1} and ${num2} is equal to ${total}`;   // Template string
+    console.log(result);
+}
+numberSum(10, 20)
+
+const price = 100;
+const discount = `Total price is ${price}, and After 20% discount your discounted price is ${price * 0.8}`;
+console.log(discount);
