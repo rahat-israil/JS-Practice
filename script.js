@@ -22,3 +22,34 @@ const student = {
 }
 student.Marks = 3.50;   // Allow
 console.log(student);
+
+
+// Normal (Function)
+function sum(num1, num2){
+    total = num1 + num2;
+    console.log(num1, num2, total);
+}
+sum(10, 20)
+sum(10) // Not Allow
+
+// Default Parameter (Function)
+function sum2(num1=0, num2=0){
+    total = num1 + num2;
+    console.log(num1, num2, total);
+}
+sum2(10,30) 
+sum2(10)  // Allow also this
+
+function multiply(num1 = 1,num2 = 1){
+    total = num1 * num2;
+    console.log(total);
+}
+multiply(5,10)
+multiply(5)
+
+/**
+ * Sum, Substruct ---> 0
+ * multiply ---> 1
+ * string  ---> ' '
+ * Array  ---> [] 
+ */
