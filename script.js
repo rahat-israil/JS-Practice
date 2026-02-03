@@ -67,3 +67,15 @@ numberSum(10, 20)
 const price = 100;
 const discount = `Total price is ${price}, and After 20% discount your discounted price is ${price * 0.8}`;
 console.log(discount);
+
+
+// Arrow function
+const sum3 = (num1, num2) => num1 + num2;
+const result = sum3(2, 5);
+console.log(result);
+
+const multiply2 = (num1, num2) => {
+    const total = num1 * num2;
+    return total;
+}
+console.log(multiply2(2,3));
