@@ -154,3 +154,22 @@ console.log(employee);
 
 // Object.freeze(employee)       // Kono change, Add, Update, Delete kicu kora jabe na
 // Object.seal(employee)        // Update kora jabe, Add or Delete kora jabe na
+
+
+// Loop through an object using for in
+
+const numFind = [2,3,4,5,6]
+for(const num of numFind){
+    console.log(num);
+}
+
+const employees = {
+    name: 'Rahat',
+    role: 'QA',
+    salary: 20000,
+    experience: 2
+}
+for(const key in employees){
+    const value = employees[key];
+    console.log(key, value);
+}
