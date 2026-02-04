@@ -129,3 +129,28 @@ console.log(color, dam);
 const company = {name: 'ICT', empSize: 500, address: 'Mirpur'};
 const {name, address} = company;
 console.log(address, name);
+
+
+// Keys, values, entries, delete, seal, freeze
+
+const employee = {
+    name: 'Rahat',
+    role: 'QA',
+    salary: 20000,
+    experience: 2
+}
+
+const key = Object.keys(employee);
+console.log(key);
+
+const value = Object.values(employee);
+console.log(value);
+
+const entries = Object.entries(employee);
+console.log(entries);
+
+delete employee.salary;
+console.log(employee);
+
+// Object.freeze(employee)       // Kono change, Add, Update, Delete kicu kora jabe na
+// Object.seal(employee)        // Update kora jabe, Add or Delete kora jabe na
