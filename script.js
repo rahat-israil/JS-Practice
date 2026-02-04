@@ -114,3 +114,18 @@ const no1 = [1,2,3,4,5]
 const no2 = [6,7,8,9]
 const combine = [...no1, ...no2]
 console.log(combine);
+
+
+//  Object and Array Destructuring
+
+const products = {name: 'iPhone', price: 100000, color: 'red'}
+console.log(products);
+
+
+const {dam, color} = {name: 'iPhone', dam: 100000, color: 'red'};
+console.log(color, dam);
+
+
+const company = {name: 'ICT', empSize: 500, address: 'Mirpur'};
+const {name, address} = company;
+console.log(address, name);
