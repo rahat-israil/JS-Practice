@@ -79,3 +79,38 @@ const multiply2 = (num1, num2) => {
     return total;
 }
 console.log(multiply2(2,3));
+
+
+// Spread operator, array max, copy arrays
+
+const numbers = [10, 30, 710, 40, 60, 44, 211, 33];
+console.log(numbers);
+console.log(...numbers);
+
+const max = Math.max(...numbers);
+console.log(max);
+
+const min = Math.min(...numbers);
+console.log(min);
+
+// Wrong Way
+const first = [1,2,3,4,5,6,7];
+const second = first;
+second.push(8,9)
+console.log(first);
+
+// Right Way
+const first1 = [1,2,3,4,5,6,7];
+const second1 = [...first];
+second.push(8,9)
+const third = [0, ...first, 11,12,13]
+console.log(first1);
+console.log(second1);
+console.log(third);
+
+
+
+const no1 = [1,2,3,4,5]
+const no2 = [6,7,8,9]
+const combine = [...no1, ...no2]
+console.log(combine);
